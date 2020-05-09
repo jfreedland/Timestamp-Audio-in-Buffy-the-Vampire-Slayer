@@ -1,0 +1,42 @@
+Buffy the Vampire Slayer (BtVS) full audio dataset
+All associated data is open-source and free for use.
+
+Please cite as:
+J. Freedland & R. Tewari. 
+
+All questions can be directed to: jfreedl at uw dot edu
+------------- 
+
+This dataset contains all source code required to measure the amount of time each character speaks for. It also contains a finalized dataset for further analysis.
+
+FOLDERS:
+- Subtitles: contains .srt subtitle files used for the analysis.
+- Episode Scripts: contains .mat (MATLAB) files that contain each episode's transcript. These were downloaded directly from http://transcripts.foreverdreaming.org/viewforum.php?f=122; the webpage is user-friendly and easy-to-use.
+- Episode Audio: An empty folder that contains the audio of each episode. It is not included for copyright and HDD (~7GB of audio) purposes.
+- Dataset: all our finalized data. This folder contains two types of files:
+	- X_timing.csv (comma separated values).
+	- X_script.csv (comma separated values).
+ 		where, 	S0X refers to the season # (i.e S03 = season 3 of Buffy)
+ 			EX refers to the episode # (i.e E1 = episode 1 of Buffy)
+		in other words: S01E1 = Season 1, Episode 1 of Buffy.
+- All other folders are relevant for the source code. Please use tutorial.m for use.
+
+All .csv files can be imported into Excel for easy use. They do not require programming software.
+------------- 
+
+HOW TO USE DATASET:
+
+X_script.csv:
+Each file named X_script.csv contains four columns. 
+Column 1: Time (in seconds) character approx. begins speaking.
+Column 2: Time (in seconds) character approx. stops speaking.
+Column 3: Est. character name (i.e: "Buffy", "Spike", etc).
+Column 4: Words spoken by character (i.e: "Is he... dead?")
+
+SEASON 1-3 TIMESTAMPS ARE FOR THE DVD EDITION.
+SEASON 4-7 TIMESTAMPS ARE FROM STREAMING EDITIONS.
+
+X_timing.csv:
+Each file named X_timing.csv contains two columns.
+Column 1: Character name (i.e: "Buffy", "Spike", etc).
+Column 2: Total speaking time, post-audio-processing, across an entire episode (in seconds).
