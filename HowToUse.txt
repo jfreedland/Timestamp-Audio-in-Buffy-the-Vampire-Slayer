@@ -12,14 +12,15 @@ This dataset contains all source code required to measure the amount of time eac
 FOLDERS:
 - Subtitles: contains .srt subtitle files used for the analysis.
 - Episode Scripts: contains .mat (MATLAB) files that contain each episode's transcript. These were downloaded directly from http://transcripts.foreverdreaming.org/viewforum.php?f=122; the webpage is user-friendly and easy-to-use.
-- Episode Audio: An empty folder that contains the audio of each episode. It is not included for copyright and HDD (~7GB of audio) purposes.
+- Episode Audio: An empty folder that contains the audio of each episode. It is not included for copyright and disk space purposes.
+- Audio Samples: Short segments of character-specific audio from season 1, episode 1 of Buffy the Vampire Slayer. These finalized clips were generated for each character in each episode and were used to generate X_timing.csv.
 - Dataset: all our finalized data. This folder contains two types of files:
 	- X_timing.csv (comma separated values).
 	- X_script.csv (comma separated values).
  		where, 	S0X refers to the season # (i.e S03 = season 3 of Buffy)
  			EX refers to the episode # (i.e E1 = episode 1 of Buffy)
 		in other words: S01E1 = Season 1, Episode 1 of Buffy.
-- All other folders are relevant for the source code. Please use tutorial.m for use.
+- All other folders are relevant for the source code. Please refer to tutorial.m for use.
 
 All .csv files can be imported into Excel for easy use. They do not require programming software.
 ------------- 
@@ -33,8 +34,8 @@ Column 2: Time (in seconds) character approx. stops speaking.
 Column 3: Est. character name (i.e: "Buffy", "Spike", etc).
 Column 4: Words spoken by character (i.e: "Is he... dead?")
 
-SEASON 1-3 TIMESTAMPS ARE FOR THE DVD EDITION.
-SEASON 4-7 TIMESTAMPS ARE FROM STREAMING EDITIONS.
+SEASON 1-3 TIMESTAMPS ARE FOR THE SD DVD EDITION.
+SEASON 4-7 TIMESTAMPS ARE FROM STREAMING HD EDITIONS.
 
 X_timing.csv:
 Each file named X_timing.csv contains two columns.
