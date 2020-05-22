@@ -20,6 +20,11 @@ FOLDERS:
  		where, 	S0X refers to the season # (i.e S03 = season 3 of Buffy)
  			EX refers to the episode # (i.e E1 = episode 1 of Buffy)
 		in other words: S01E1 = Season 1, Episode 1 of Buffy.
+
+	-----
+	Please see compiledTimings.csv for every episode of X_timing.csv compiled by character.
+	----
+
 - All other folders are relevant for the source code. Please refer to tutorial.m for use.
 
 All .csv files can be imported into Excel for easy use. They do not require programming software.
