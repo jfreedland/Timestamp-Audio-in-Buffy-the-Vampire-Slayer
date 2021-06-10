@@ -2,7 +2,7 @@ Buffy the Vampire Slayer (BtVS) full audio dataset
 All associated data is open-source and free for use.
 
 Please cite as:
-J. Freedland & R. Tewari. 
+J. Freedland
 
 All questions can be directed to: jfreedl at uw dot edu
 ------------- 

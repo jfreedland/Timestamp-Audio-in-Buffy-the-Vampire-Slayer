@@ -1,7 +1,7 @@
 function finalSubtitle = matchSubtitlesToScript(season,episode)
     
     % Assign directory
-    directory = '/Users/Julian/Desktop/Buffy Audio Package/';
+    directory = '';
     
     % Convert episode # into filename
     if episode < 10

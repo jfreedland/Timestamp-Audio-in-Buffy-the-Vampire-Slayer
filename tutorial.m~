@@ -2,8 +2,8 @@
 % This script measures speaking time for each character in Buffy the Vampire Slayer.
 % By J. Freedland, 2020
 
-season = 5; % Which season of Buffy the Vampire Slayer
-episode = 6; % Which episode within a given season of Buffy the Vampire Slayer
+season = 1; % Which season of Buffy the Vampire Slayer
+episode = 1; % Which episode within season of Buffy the Vampire Slayer
 
 % Find script and associated subtitles from BtVS episode
 script = episodeScriptUtils.matchSubtitlesToScript(season,episode);
@@ -11,8 +11,16 @@ script = episodeScriptUtils.matchSubtitlesToScript(season,episode);
 % Export as .csv (if desired)
 % writecell(script,['S0',mat2str(season),'E',mat2str(episode),'_script.csv'])
 
-%% Identify words spoken by each character
-combinedLines = episodeScriptUtils.wordPreferences(script);
+%% Identify words spoken per character
+
+% Remove lines not attributed to a single character
+S = script(~cellfun('isempty',script(:,3)),:);
+
+% Identify key characters
+[characters,~,index] = unique(S(:,3));
+
+for i = 1:length(characters)
+end
 
 %%
 % We can combine voices to ensure quality audio timings
